@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title> CV </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/styles/nord.min.css">
+</head>
+<body>
+<div class='mainWrapper'>
+    <div class="contentWrapper">
+        <header class="headerWrapper">
+            <div class="header__menu menu">
+                <div class="menu__icon icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a  data-goto=".page_1 " href="#" class="menu__link headerLinks  ">About me</a></li>
+                        <li><a  data-goto=".page_2 " href="#" class="menu__link headerLinks ">Education</a></li>
+                        <li><a  data-goto=".page_3 " href="#" class="menu__link headerLinks ">Level of English</a></li>
+                        <li><a  data-goto=".page_4 " href="#" class="menu__link headerLinks ">Skills</a></li>
+                        <li><a data-goto=".page_5 " href="#" class="menu__link headerLinks ">Video</a></li>
+                        <li><a data-goto=".page_6 " href="#" class="menu__link headerLinks ">Code example </a></li>
+                        <li><a data-goto=".page_7 " href="#" class="menu__link headerLinks ">Contacts </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="photoWrapper page_1">
+            <div>
+                <img src="./assets/__QKvPfjvEc.jpg" alt='My Photo' class="photo"/>
+            </div>
+            <div>
+                <h2 class="name"><b>Anastasiya Ablavatskaya</b></h2>
+                <h3 class="prof"> Front-end developer ( Junior)</h3>
+            </div>
+        </main>
+        <article class="articleWrapper page_2">
+           <a id="aboutMe"><h4 class="articleTitle">About me</h4></a>
+            <p class="articleContent">My goal is to succeed in web- development. I aspire to grow personally in the
+                spheres I am passionate about.
+                For example, web-development. I am self-motivated, dedicated, stress-resilient and sociable.</p>
+        </article>
+        <div class="educationContainer">
+            <section class="educationSection">
+                <a id="Education"><h4 class="educationTitle"> Education</h4></a>
+                <ul class="education">
+                    <li>Vitebsk State Order Of Peoples’ Friendship Medical University 2016,faculty of therapy</li>
+                    <li>lectures CS50</li>
+                    <li>W3school</li>
+                    <li>It-incubator</li>
+                </ul>
+            </section>
+            <section class="page_3">
+                <h4 id="level" class="educationTitle">Level of English</h4>
+                <p class="education">B1(Intermediate) </p>
+            </section>
+        </div>
+
+        <div class="skillContainer">
+            <section class="page_4">
+               <a id="Skills"> <h4 class="articleTitle"> Skills: </h4></a>
+                <ul class="articleContent">
+                    <li>HTML;</li>
+                    <li>CSS;</li>
+                    <li>Git</li>
+                    <li>JS</li>
+                    <li>HitGub</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                </ul>
+            </section>
+            <section  class="page_5">
+                <a id="Video">  <h4 class="articleTitle"> Video </h4></a>
+                <iframe   src="https://www.youtube.com/embed/uU3YSfkf_ok" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </div>
+        <div class="codExample page_6">
+           <a id="Code"> <h4 class="educationTitle">
+                Code example :
+            </h4></a>
+            <pre><code class="js">
+           function squareSum(numbers){
+           let sum=0;
+           for(let i=0;i &lt; numbers.length;i++){
+           sum+=numbers[i]*numbers[i];
+           }return(sum);}
+            </code></pre>
+            <div>
+                <div class="projects">
+                    <a href="https://an-life.github.io/Portfolio/" target="_blank" class="projectLink"><div>
+                        <h5 class="projectTitle">ReactPortfolio</h5>
+                        <img src="https://cdn.pixabay.com/photo/2015/11/16/21/57/cat-1046497_960_720.jpg" alt="cat" class="catImg"/>
+                        <p class="projectText">In developing...</p>
+                        <ul class="projectText">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>React</li>
+                        </ul>
+                    </div></a>
+                        <a href="https://github.com/An-life/ToDoList" target="_blank" class="projectLink"><div>
+                            <h5 class="projectTitle">ToDoList</h5>
+                            <img src="https://cdn.pixabay.com/photo/2015/11/16/21/57/cat-1046497_960_720.jpg" alt="cat" class="catImg"/>
+                            <p class="projectText">In developing...</p>
+                            <ul class="projectText">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Type Script</li>
+                                <li>React</li>
+                            </ul>
+                        </div></a>
+
+
+                        <a href="https://github.com/An-life/SocialNetWork" target="_blank" class="projectLink"><div>
+                            <h5  class=" projectTitle" >SocialNetWork</h5>
+                            <img src="https://cdn.pixabay.com/photo/2015/11/16/21/57/cat-1046497_960_720.jpg" alt="cat" class="catImg"/>
+                            <p class="projectText">In developing...</p>
+                            <ul class="projectText">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Type Script</li>
+                                <li>React</li>
+                            </ul>
+                        </div></a>
+                </div>
+        </div></div>
+        <footer class="skillContainer">
+            <div class="page_7">
+            <a id="Contacts"><h4 class="articleTitle"> Contacts for communication: </h4></a>
+            <ul class="articleContent">
+                <li>e-mail: ablovatskaja@gmail.com</li>
+                <li>location: Minsk</li>
+                <li>Telephone:+375336778164</li>
+                <li>2021</li>
+            </ul>
+            </div>
+            <div>
+            <a   href=" https://github.com/An-life" target="_blank" ><img class="icons" src="./assets/circle-github_icon-icons.com_66826.png" alt="icon"/> </a>
+            <a href="https://rs.school/js/" target="_blank"><img class="rs" src="https://rs.school/images/rs_school_js.svg" alt="icon"/></a>
+             <a href="https://www.linkedin.com/in/anastasiya-ablavatskaya-13413b216/" target="_blank"><img class="icons" src="./assets/linked-in-square-button_icon-icons.com_68389.png" alt="icon"/></a>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="./lib/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+
+</html>
