@@ -11,8 +11,8 @@ if (menuLinks.length > 0) {
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageXOffset - document.querySelector('header').offsetHeight;
 if(iconMenu.classList.contains('_active')){
     document.body.classList.remove("_lock");
-    iconMenu.classList.remove('_active');
-    menuBody.classList.remove('_active');
+    iconMenu.classList.remove('active');
+    menuBody.classList.remove('active');
 }
             window.scroll({
                 top: gotoBlockValue,
