@@ -103,7 +103,7 @@ body._lock{
 
 
 
-  @media (max-width: 479.98px) {
+  @media (max-width: 767px) {
     .menu__body {
       position: fixed;
       width: 100%;
@@ -372,6 +372,12 @@ li {
     margin-top: -40px;
     min-height: 250px;
     text-align: center;
+}
+pre{
+    white-space: normal;
+}
+pre code{
+    white-space: pre-wrap;
 }
 .icons{
     max-width: 40px;
