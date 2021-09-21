@@ -1,4 +1,7 @@
 const menuLinks = document.querySelectorAll('.headerLinks[data-goto]');
+let iconMenu = document.querySelector(".icon-menu");
+let menuBody = document.querySelector(".menu__body");
+
 if (menuLinks.length > 0) {
     menuLinks.forEach(link => {
         link.addEventListener('click', onMenuClick);
@@ -7,13 +10,15 @@ if (menuLinks.length > 0) {
     function onMenuClick(e) {
         const menuLink = e.target;
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageXOffset - document.querySelector('header').offsetHeight;
-if(iconMenu.classList.contains('_active')){
-    document.body.classList.remove("_lock");
-    iconMenu.classList.remove('active');
-    menuBody.classList.remove('active');
-}
+            if (iconMenu.classList.contains('_active')) {
+
+                document.body.classList.remove("_lock");
+                iconMenu.classList.remove('active');
+                menuBody.classList.remove('active');
+            }
             window.scroll({
                 top: gotoBlockValue,
                 behavior: 'smooth'
@@ -24,14 +29,19 @@ if(iconMenu.classList.contains('_active')){
 
 }
 
-let iconMenu = document.querySelector(".icon-menu");
-let menuBody = document.querySelector(".menu__body");
-	iconMenu.addEventListener("click", function (e) {
-		
-			iconMenu.classList.toggle("active");
-			menuBody.classList.toggle("active");
-		
-	})
+
+iconMenu.addEventListener("click", function (e) {
+
+    iconMenu.classList.toggle("active");
+    menuBody.classList.toggle("active");
+    document.body.classList.toggle("_lock");
+})
+menuBody.addEventListener("click", function (e) {
+
+    iconMenu.classList.toggle("active");
+    menuBody.classList.toggle("active");
+
+})
 console.log(`
 RS School - Stage 1 2021
 Self-Test: 
